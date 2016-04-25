@@ -220,7 +220,7 @@
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					4ED4B7F419283674002C7E33 = {
-						DevelopmentTeam = HWXU994C4L;
+						DevelopmentTeam = 3HR234Y477;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -382,7 +382,7 @@
 				INFOPLIST_FILE = Fit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chelseasmith.Pulse;
+				PRODUCT_BUNDLE_IDENTIFIER = us.chelseasmith.Pulse;
 				PRODUCT_NAME = Fit;
 				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = NO;
@@ -401,7 +401,7 @@
 				INFOPLIST_FILE = Fit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chelseasmith.Pulse;
+				PRODUCT_BUNDLE_IDENTIFIER = us.chelseasmith.Pulse;
 				PRODUCT_NAME = Fit;
 				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = NO;
