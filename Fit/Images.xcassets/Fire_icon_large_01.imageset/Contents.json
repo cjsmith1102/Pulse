@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Fire_icon_large_01.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "icon_profile@2x.png",
       "scale" : "2x"
     },
     {

@@ -1,12 +1,8 @@
-/*
-    Copyright (C) 2014 Apple Inc. All Rights Reserved.
-    See LICENSE.txt for this sample’s licensing information
-    
-    Abstract:
-    
-                Displays information retrieved from HealthKit about the food items consumed today.
-            
-*/
+//  Fit
+//
+//  Created by Chelsea Smith on 3/9/16.
+//  Copyright © 2016 Apple. All rights reserved.
+//
 
 @import UIKit;
 @import HealthKit;

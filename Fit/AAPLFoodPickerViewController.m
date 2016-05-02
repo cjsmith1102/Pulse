@@ -1,12 +1,8 @@
-/*
-    Copyright (C) 2014 Apple Inc. All Rights Reserved.
-    See LICENSE.txt for this sample’s licensing information
-    
-    Abstract:
-    
-                A UIViewController subclass that manages the selection of a food item.
-            
-*/
+//  Fit
+//
+//  Created by Chelsea Smith on 3/9/16.
+//  Copyright © 2016 Apple. All rights reserved.
+//
 
 #import "AAPLFoodPickerViewController.h"
 #import "AAPLFoodItem.h"
@@ -32,6 +28,14 @@ NSString *const AAPLFoodPickerViewControllerUnwindSegueIdentifier = @"AAPLFoodPi
         [AAPLFoodItem foodItemWithName:@"Wheat Bagel" joules:240000.0],
         [AAPLFoodItem foodItemWithName:@"Bran with Raisins" joules:190000.0],
         [AAPLFoodItem foodItemWithName:@"Regular Instant Coffee" joules:1000.0],
+        [AAPLFoodItem foodItemWithName:@"Banana" joules:439320.0],
+        [AAPLFoodItem foodItemWithName:@"Cranberry Bagel" joules:416000.0],
+        [AAPLFoodItem foodItemWithName:@"Oatmeal" joules:150000.0],
+        [AAPLFoodItem foodItemWithName:@"Fruits Salad" joules:60000.0],
+        [AAPLFoodItem foodItemWithName:@"Fried Sea Bass" joules:200000.0],
+        [AAPLFoodItem foodItemWithName:@"Chips" joules:190000.0],
+        [AAPLFoodItem foodItemWithName:@"Chicken Taco" joules:170000.0],
+        [AAPLFoodItem foodItemWithName:@"Grilled Chicken" joules:200000.0],
         [AAPLFoodItem foodItemWithName:@"Banana" joules:439320.0],
         [AAPLFoodItem foodItemWithName:@"Cranberry Bagel" joules:416000.0],
         [AAPLFoodItem foodItemWithName:@"Oatmeal" joules:150000.0],

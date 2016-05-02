@@ -3,12 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00FE738219A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 00FE738019A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.h */; };
 		00FE738319A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE738119A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.m */; };
+		105285221CD73D1B003F5079 /* WorkoutDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 105285201CD73D1B003F5079 /* WorkoutDataSource.h */; };
+		105285231CD73D1B003F5079 /* WorkoutDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 105285211CD73D1B003F5079 /* WorkoutDataSource.m */; };
+		10B0A22C1CB9ADBE00AB7169 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B0A22B1CB9ADBE00AB7169 /* Launch Screen.storyboard */; };
+		10B0A2301CB9B15700AB7169 /* AALPWorkoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B0A22E1CB9B15700AB7169 /* AALPWorkoutViewController.h */; };
+		10B0A2311CB9B15700AB7169 /* AALPWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0A22F1CB9B15700AB7169 /* AALPWorkoutViewController.m */; };
+		10B0A2351CB9C83C00AB7169 /* AALPActivityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B0A2331CB9C83C00AB7169 /* AALPActivityViewController.h */; };
+		10B0A2361CB9C83C00AB7169 /* AALPActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0A2341CB9C83C00AB7169 /* AALPActivityViewController.m */; };
 		3E359022192E88230010F9FF /* AAPLJournalViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E359021192E88230010F9FF /* AAPLJournalViewController.h */; };
 		3E35E886192E68FF00C5BC4E /* AAPLFoodItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E35E884192E68FF00C5BC4E /* AAPLFoodItem.h */; };
 		3E35E887192E68FF00C5BC4E /* AAPLFoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E35E885192E68FF00C5BC4E /* AAPLFoodItem.m */; };
@@ -30,10 +37,16 @@
 /* Begin PBXFileReference section */
 		00FE738019A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKHealthStore+AAPLExtensions.h"; sourceTree = "<group>"; };
 		00FE738119A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HKHealthStore+AAPLExtensions.m"; sourceTree = "<group>"; };
+		105285201CD73D1B003F5079 /* WorkoutDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutDataSource.h; sourceTree = "<group>"; };
+		105285211CD73D1B003F5079 /* WorkoutDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutDataSource.m; sourceTree = "<group>"; };
+		10B0A22B1CB9ADBE00AB7169 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		10B0A22E1CB9B15700AB7169 /* AALPWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALPWorkoutViewController.h; sourceTree = "<group>"; };
+		10B0A22F1CB9B15700AB7169 /* AALPWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALPWorkoutViewController.m; sourceTree = "<group>"; };
+		10B0A2331CB9C83C00AB7169 /* AALPActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AALPActivityViewController.h; sourceTree = "<group>"; };
+		10B0A2341CB9C83C00AB7169 /* AALPActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AALPActivityViewController.m; sourceTree = "<group>"; };
 		3E359021192E88230010F9FF /* AAPLJournalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLJournalViewController.h; sourceTree = "<group>"; };
 		3E35E884192E68FF00C5BC4E /* AAPLFoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLFoodItem.h; sourceTree = "<group>"; };
 		3E35E885192E68FF00C5BC4E /* AAPLFoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLFoodItem.m; sourceTree = "<group>"; };
-		3E38FDAA192C534F00A50A71 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3E731F06195208A9002A1E80 /* Fit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fit.entitlements; sourceTree = "<group>"; };
 		3EC2BF701964B1AB0097E8FD /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		4E120CB41935421000FDB265 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -63,10 +76,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10B0A22D1CB9B10600AB7169 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				10B0A22E1CB9B15700AB7169 /* AALPWorkoutViewController.h */,
+				10B0A22F1CB9B15700AB7169 /* AALPWorkoutViewController.m */,
+				105285201CD73D1B003F5079 /* WorkoutDataSource.h */,
+				105285211CD73D1B003F5079 /* WorkoutDataSource.m */,
+			);
+			name = Workout;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		10B0A2321CB9C80900AB7169 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				10B0A2331CB9C83C00AB7169 /* AALPActivityViewController.h */,
+				10B0A2341CB9C83C00AB7169 /* AALPActivityViewController.m */,
+			);
+			name = Activity;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		4ED4B7EB19283674002C7E33 = {
 			isa = PBXGroup;
 			children = (
-				3E38FDAA192C534F00A50A71 /* README.md */,
+				10B0A22B1CB9ADBE00AB7169 /* Launch Screen.storyboard */,
 				4ED4B7F719283674002C7E33 /* Fit */,
 				4ED4B7F619283674002C7E33 /* Products */,
 			);
@@ -93,6 +128,8 @@
 				4ED6CAD219287EEC004BAD02 /* Journal */,
 				4ED6CAD319287EFF004BAD02 /* Energy */,
 				4ED4B80019283674002C7E33 /* Images.xcassets */,
+				10B0A2321CB9C80900AB7169 /* Activity */,
+				10B0A22D1CB9B10600AB7169 /* Workout */,
 				4ED4B7F819283674002C7E33 /* Supporting Files */,
 			);
 			path = Fit;
@@ -147,7 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E35E886192E68FF00C5BC4E /* AAPLFoodItem.h in Headers */,
+				105285221CD73D1B003F5079 /* WorkoutDataSource.h in Headers */,
+				10B0A2301CB9B15700AB7169 /* AALPWorkoutViewController.h in Headers */,
 				4ED4B7FD19283674002C7E33 /* AAPLAppDelegate.h in Headers */,
+				10B0A2351CB9C83C00AB7169 /* AALPActivityViewController.h in Headers */,
 				00FE738219A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.h in Headers */,
 				4ED4B81E19283799002C7E33 /* AAPLProfileViewController.h in Headers */,
 				4ED6CAC119287256004BAD02 /* AAPLFoodPickerViewController.h in Headers */,
@@ -196,8 +236,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 4ED4B7EF19283674002C7E33 /* Build configuration list for PBXProject "Fit" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 4ED4B7EF19283674002C7E33 /* Build configuration list for PBXProject "Pulse" */;
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -220,6 +260,7 @@
 			files = (
 				4E120CB31935421000FDB265 /* Localizable.strings in Resources */,
 				4ED4B80119283674002C7E33 /* Images.xcassets in Resources */,
+				10B0A22C1CB9ADBE00AB7169 /* Launch Screen.storyboard in Resources */,
 				3EC2BF711964B1AB0097E8FD /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,11 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E35E887192E68FF00C5BC4E /* AAPLFoodItem.m in Sources */,
+				10B0A2311CB9B15700AB7169 /* AALPWorkoutViewController.m in Sources */,
+				105285231CD73D1B003F5079 /* WorkoutDataSource.m in Sources */,
 				4ED4B7FF19283674002C7E33 /* AAPLAppDelegate.m in Sources */,
 				4ED6CAC219287256004BAD02 /* AAPLFoodPickerViewController.m in Sources */,
 				4ED4B81F19283799002C7E33 /* AAPLProfileViewController.m in Sources */,
 				00FE738319A5A4F200EEEC5D /* HKHealthStore+AAPLExtensions.m in Sources */,
 				4ED4B7FB19283674002C7E33 /* main.m in Sources */,
+				10B0A2361CB9C83C00AB7169 /* AALPActivityViewController.m in Sources */,
 				4ED6CAC619287AE5004BAD02 /* AAPLEnergyViewController.m in Sources */,
 				4ED6CABA1928708D004BAD02 /* AAPLJournalViewController.m in Sources */,
 			);
@@ -375,7 +419,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4ED4B7EF19283674002C7E33 /* Build configuration list for PBXProject "Fit" */ = {
+		4ED4B7EF19283674002C7E33 /* Build configuration list for PBXProject "Pulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4ED4B80E19283674002C7E33 /* Debug */,

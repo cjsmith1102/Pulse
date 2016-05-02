@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4ED4B7F419283674002C7E33"
                BuildableName = "Fit.app"
                BlueprintName = "Fit"
-               ReferencedContainer = "container:Fit.xcodeproj">
+               ReferencedContainer = "container:Pulse.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "4ED4B7F419283674002C7E33"
             BuildableName = "Fit.app"
             BlueprintName = "Fit"
-            ReferencedContainer = "container:Fit.xcodeproj">
+            ReferencedContainer = "container:Pulse.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "4ED4B7F419283674002C7E33"
             BuildableName = "Fit.app"
             BlueprintName = "Fit"
-            ReferencedContainer = "container:Fit.xcodeproj">
+            ReferencedContainer = "container:Pulse.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "4ED4B7F419283674002C7E33"
             BuildableName = "Fit.app"
             BlueprintName = "Fit"
-            ReferencedContainer = "container:Fit.xcodeproj">
+            ReferencedContainer = "container:Pulse.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

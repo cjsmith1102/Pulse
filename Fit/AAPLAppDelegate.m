@@ -1,17 +1,14 @@
-/*
-    Copyright (C) 2014 Apple Inc. All Rights Reserved.
-    See LICENSE.txt for this sample’s licensing information
-    
-    Abstract:
-    
-                The main application delegate.
-            
-*/
+//  Fit
+//
+//  Created by Chelsea Smith on 3/9/16.
+//  Copyright © 2016 Apple. All rights reserved.
+//
 
 #import "AAPLAppDelegate.h"
 #import "AAPLProfileViewController.h"
 #import "AAPLJournalViewController.h"
 #import "AAPLEnergyViewController.h"
+#import "AALPWorkoutViewController.h"
 @import HealthKit;
 
 @interface AAPLAppDelegate()

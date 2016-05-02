@@ -1,12 +1,8 @@
-/*
-    Copyright (C) 2014 Apple Inc. All Rights Reserved.
-    See LICENSE.txt for this sample’s licensing information
-    
-    Abstract:
-    
-                Displays age, height, and weight information retrieved from HealthKit.
-            
-*/
+//  Fit
+//
+//  Created by Chelsea Smith on 3/9/16.
+//  Copyright © 2016 Apple. All rights reserved.
+//
 
 #import "AAPLProfileViewController.h"
 #import "HKHealthStore+AAPLExtensions.h"
@@ -22,6 +18,8 @@ typedef NS_ENUM(NSInteger, AAPLProfileViewControllerTableViewIndex) {
 @interface AAPLProfileViewController ()
 
 // Note that the user's age is not editable.
+
+
 @property (nonatomic, weak) IBOutlet UILabel *ageUnitLabel;
 @property (nonatomic, weak) IBOutlet UILabel *ageValueLabel;
 
@@ -70,22 +68,28 @@ typedef NS_ENUM(NSInteger, AAPLProfileViewControllerTableViewIndex) {
 - (NSSet *)dataTypesToWrite {
     HKQuantityType *dietaryCalorieEnergyType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDietaryEnergyConsumed];
     HKQuantityType *activeEnergyBurnType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierActiveEnergyBurned];
+    HKQuantityType *basilEnergyBurnType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBasalEnergyBurned];
     HKQuantityType *heightType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeight];
     HKQuantityType *weightType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
+    HKQuantityType *heartType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
+    HKWorkoutType *workoutType = [HKObjectType workoutType];
     
-    return [NSSet setWithObjects:dietaryCalorieEnergyType, activeEnergyBurnType, heightType, weightType, nil];
+    return [NSSet setWithObjects:dietaryCalorieEnergyType, activeEnergyBurnType, heightType, weightType,heartType,workoutType,basilEnergyBurnType,nil];
 }
 
 // Returns the types of data that Fit wishes to read from HealthKit.
 - (NSSet *)dataTypesToRead {
     HKQuantityType *dietaryCalorieEnergyType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDietaryEnergyConsumed];
     HKQuantityType *activeEnergyBurnType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierActiveEnergyBurned];
+    HKQuantityType *basilEnergyBurnType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBasalEnergyBurned];
     HKQuantityType *heightType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeight];
     HKQuantityType *weightType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
     HKCharacteristicType *birthdayType = [HKObjectType characteristicTypeForIdentifier:HKCharacteristicTypeIdentifierDateOfBirth];
     HKCharacteristicType *biologicalSexType = [HKObjectType characteristicTypeForIdentifier:HKCharacteristicTypeIdentifierBiologicalSex];
-    
-    return [NSSet setWithObjects:dietaryCalorieEnergyType, activeEnergyBurnType, heightType, weightType, birthdayType, biologicalSexType, nil];
+    HKQuantityType *heartType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
+    HKWorkoutType *workoutType = [HKObjectType workoutType];
+
+    return [NSSet setWithObjects:dietaryCalorieEnergyType, activeEnergyBurnType, heightType, weightType, birthdayType, biologicalSexType,heartType,workoutType,basilEnergyBurnType,nil];
 }
 
 #pragma mark - Reading HealthKit Data
@@ -109,7 +113,7 @@ typedef NS_ENUM(NSInteger, AAPLProfileViewControllerTableViewIndex) {
         NSDateComponents *ageComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:dateOfBirth toDate:now options:NSCalendarWrapComponents];
         
         NSUInteger usersAge = [ageComponents year];
-
+        [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInteger:usersAge] forKey:@"HKAge"];
         self.ageValueLabel.text = [NSNumberFormatter localizedStringFromNumber:@(usersAge) numberStyle:NSNumberFormatterNoStyle];
     }
 }
@@ -143,6 +147,7 @@ typedef NS_ENUM(NSInteger, AAPLProfileViewControllerTableViewIndex) {
             
             // Update the user interface.
             dispatch_async(dispatch_get_main_queue(), ^{
+                [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithDouble:usersHeight] forKey:@"HKHeight"];
                 self.heightValueLabel.text = [NSNumberFormatter localizedStringFromNumber:@(usersHeight) numberStyle:NSNumberFormatterNoStyle];
             });
         }
@@ -178,6 +183,7 @@ typedef NS_ENUM(NSInteger, AAPLProfileViewControllerTableViewIndex) {
 
             // Update the user interface.
             dispatch_async(dispatch_get_main_queue(), ^{
+                [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithDouble:usersWeight] forKey:@"HKWeight"];
                 self.weightValueLabel.text = [NSNumberFormatter localizedStringFromNumber:@(usersWeight) numberStyle:NSNumberFormatterNoStyle];
             });
         }
